@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/registration.css">
+  <title>Document</title>
+</head>
+<body>
+  <form action="" class="registration" id="registrationForm">
+  <div class="form-header">
+    <h1>Создать аккаунт</h1>
+    <p>Присоединяйтесь к Revival и получайте персональные скидки</p>
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Имя</label>
+    <input type="text" id="name" name="name" placeholder="Иван" required>
+    
+    <label for="surname">Фамилия</label>
+    <input type="text" id="surname" name="surname" placeholder="Иванов" required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+    
+    <label for="phone">Телефон</label>
+    <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+    
+    <label for="password">Пароль</label>
+    <div class="password-group">
+      <input type="password" id="password" name="password" placeholder="Минимум 6 символов" required>
+      <button type="button" class="password-toggle" data-target="password">👁️</button>
+    </div>
+    
+    <label for="confirmPassword">Подтверждение пароля</label>
+    <div class="password-group">
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторите пароль" required>
+      <button type="button" class="password-toggle" data-target="confirmPassword">👁️</button>
+    </div>
+    
+    <div class="agreement-group">
+      <label class="checkbox-label">
+        <input type="checkbox" id="agreement" required>
+        <span>
+          Я принимаю <a href="#">условия использования</a> и 
+          <a href="#">политику конфиденциальности</a>
+        </span>
+      </label>
+    </div>
+  </div>
+  
+  <button type="submit" class="register-btn">Зарегистрироваться</button>
+</form>
+<script>
+  const form = document.querySelector('form');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirmPassword');
+
+function validatePassword() {
+    if (passwordInput.value.length < 8) {
+        alert('Пароль должен содержать минимум 8 символов');
+        return false;
+    }
+    return true;
+}
+
+function validatePasswordMatch() {
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        alert('Пароли не совпадают');
+        return false;
+    }
+    return true;
+}
+
+form.addEventListener('submit', function(e) {
+    if (!validatePassword()) {
+        e.preventDefault();
+        return;
+    }
+    
+    if (!validatePasswordMatch()) {
+        e.preventDefault();
+        return;
+    }
+});
+</script>
+
+
+</body>
+</html>

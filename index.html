@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cossette+Titre:wght@400;700&family=Dosis:wght@200..800&family=Geologica:wght,CRSV@100..900,0&family=Marck+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <title>Revival shop</title>
+</head>
+<body>
+  <header class="header-container">
+    <div class="logo">REVIVAL</div>
+    
+    <button class="burger-menu" id="burgerBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    
+    <nav class="nav-menu" id="navMenu">
+      <ul class="header-icons">
+        <li><a href="#О нас">О нас</a></li>
+        <li><a href="#Контакты">Контакты</a></li>
+        <li><a href="#Авторизация">Регистрация</a></li>
+        <li><a id="temka" href="Error404.html"><img src="/изображения/icons8-круглая-лампа-64.png" class="tema" alt=""></a></li>
+        <li><a href="Личный кабинет.html">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Возрождаем классику</h1>
+        <p class="hero-subtitle">Реставрированная мебель с историей. Каждый предмет уникален.</p>
+      </div>
+    </section>
+
+  <section class="about"id="О нас">
+  <div class="about-content">
+    <h2 class="about-title">О мастерской <span class="highlight">Revival</span></h2>
+    <p class="about-text">Мы возвращаем к жизни мебель, которая хранит историю и тепло рук мастеров прошлых эпох. Каждый предмет, попадающий к нам, проходит долгий путь восстановления.</p>
+    <p class="about-text">Наша команда — это реставраторы с 15-летним опытом, которые влюблены в свое дело. Мы используем только традиционные техники реставрации и натуральные материалы: шеллак, воск, масла.</p>
+    
+    <div class="features-grid">
+      <div class="feature-item">
+        <h4>Ручная работа</h4>
+        <p>Каждый предмет восстанавливается вручную</p>
+      </div>
+
+      <div class="feature-item">
+        <h4>Натуральные материалы</h4>
+        <p>Только безопасные составы и природные масла</p>
+      </div>
+
+      <div class="feature-item">
+        <h4>Сертификат подлинности</h4>
+        <p>Документ с историей к каждому предмету</p>
+      </div>
+
+      <div class="feature-item">
+        <h4>Гарантия качества</h4>
+        <p>12 месяцев гарантии на все работы</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="products">
+  <h2 class="section-title">Популярные товары</h2>
+  
+  <div class="products-grid">
+    <!-- Товар 1 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./изображения/orig (2).webp" alt="Венский стул">
+      </div>
+      <div class="product-info">
+        <div class="product-details">
+          <h3>Венский стул XIX век</h3>
+          <p>Реставрированный бук, ручная отделка</p>
+        </div>
+        <div class="product-footer">
+          <div class="price">24 900 ₽</div>
+          <button class="cart-btn">В корзину</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Товар 2 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./изображения/orig (1).webp" alt="Комод">
+      </div>
+      <div class="product-info">
+        <div class="product-details">
+          <h3>Комод "Шеваль"</h3>
+          <p>Массив ореха, бронзовые накладки</p>
+        </div>
+        <div class="product-footer">
+          <div class="price">45 500 ₽</div>
+          <button class="cart-btn">В корзину</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Товар 3 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./изображения/6596680322.jpg" alt="Зеркало">
+      </div>
+      <div class="product-info">
+        <div class="product-details">
+          <h3>Зеркало в резной раме</h3>
+          <p>Лепнина, патина, ручная роспись</p>
+        </div>
+        <div class="product-footer">
+          <div class="price">18 900 ₽</div>
+          <button class="cart-btn">В корзину</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Товар 4 -->
+    <div class="product-card">
+      <div class="product-image">
+        <img src="./изображения/6045039259.jpg" alt="Стол">
+      </div>
+      <div class="product-info">
+        <div class="product-details">
+          <h3>Обеденный стол "Винтаж"</h3>
+          <p>Массив дуба, ручная полировка</p>
+        </div>
+        <div class="product-footer">
+          <div class="price-block">
+            <span class="old-price">67 900 ₽</span>
+            <span class="current-price">60 000 ₽</span>
+            <span class="discount-badge">-10%</span>
+          </div>
+          <button class="cart-btn">В корзину</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Блок авторизации -->
+<section class="auth-section" id="Авторизация">
+  <div class="auth-container">
+    <div class="auth-glass-card">
+      <div class="auth-left">
+        <h2 class="auth-title">Добро пожаловать!</h2>
+        <p class="auth-desc">Войдите в личный кабинет, чтобы отслеживать заказы и получать персональные скидки</p>
+        <div class="auth-features">
+          <div class="feature-chip">
+            <span>✓</span> История заказов
+          </div>
+          <div class="feature-chip">
+            <span>✓</span> Персональные скидки
+          </div>
+          <div class="feature-chip">
+            <span>✓</span> Быстрый заказ
+          </div>
+        </div>
+      </div>
+      
+      <div class="auth-right">
+        <h3 class="login-title">Вход в аккаунт</h3>
+        
+        <!-- Форма входа -->
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group password-group">
+            <input type="password" placeholder="Пароль" required>
+            <span class="password-toggle">👁️</span>
+          </div>
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" checked> Запомнить меня
+            </label>
+            <a href="#" class="forgot-link">Забыли пароль?</a>
+          </div>
+          <button type="submit" class="auth-submit-btn">Войти</button>
+        </form>
+        
+        <div class="auth-footer">
+          <p class="register-link-text">
+            Нет аккаунта? 
+            <a href="registration.html" class="register-link">Зарегистрироваться</a>
+          </p>
+        </div>
+        
+        <div class="auth-social">
+          <div class="social-divider">
+            <span>Или войдите через</span>
+          </div>
+          <div class="social-buttons">
+            <button class="social-btn google">G</button>
+            <button class="social-btn vk">VK</button>
+            <button class="social-btn yandex">Я</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="reviews-section">
+  <div class="reviews-container">
+    <h2 class="reviews-title">Отзывы наших клиентов</h2>
+    <p class="reviews-subtitle">Что говорят о нас те, кто уже доверил нам восстановление своей мебели</p>
+    
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
+      
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Отзыв 1 - с PNG иконкой -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="/изображения/icons8-аватар-48.png" alt="Анна Соколова">
+              </div>
+              <div class="reviewer-info">
+                <h4>Анна Соколова</h4>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"Заказывала реставрацию бабушкиного комода. Мастера проделали невероятную работу! Вернули ему первозданный вид, сохранили всю историю. Огромное спасибо команде Revival!"</p>
+            <div class="review-date">15 марта 2026</div>
+          </div>
+          
+          <!-- Отзыв 2 - с PNG иконкой -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="/изображения/icons8-аватар-48 (2).png" alt="Олег Власов">
+              </div>
+              <div class="reviewer-info">
+                <h4>Олег Власов</h4>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"Реставрировал венский стул. Результат превзошел ожидания! Всё сделано с душой и вниманием к деталям. Рекомендую!"</p>
+            <div class="review-date">28 февраля 2026</div>
+          </div>
+          
+          <!-- Отзыв 3 - с PNG иконкой -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="/изображения/icons8-аватар-48 (1).png" alt="Чиж Обычный">
+              </div>
+              <div class="reviewer-info">
+                <h4>Чиж Обычный</h4>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"Очень довольна работой мастерской. Восстановили старинное зеркало в резной раме. Теперь оно украшает мою гостиную. Спасибо за профессионализм!"</p>
+            <div class="review-date">10 февраля 2026</div>
+          </div>
+          
+          <!-- Отзыв 4 - с PNG иконкой -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="/изображения/icons8-аватар-50.png" alt="Кот Зеленый">
+              </div>
+              <div class="reviewer-info">
+                <h4>Кот Зеленый</h4>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">☆</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"Отличная мастерская! Восстановили обеденный стол. Всё сделали качественно и в срок. Цены адекватные. Буду рекомендовать друзьям."</p>
+            <div class="review-date">25 января 2026</div>
+          </div>
+          
+          <!-- Отзыв 5 - с PNG иконкой -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">
+                <img src="/images/avatars/woman-avatar-2.png" alt="Ольга Петрова">
+              </div>
+              <div class="reviewer-info">
+                <h4>Ольга Петрова</h4>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                </div>
+              </div>
+            </div>
+            <p class="review-text">"Спасибо за чудесную работу! Реставрация старинного бюро прошла на высшем уровне. Команда Revival - настоящие профессионалы своего дела!"</p>
+            <div class="review-date">12 января 2026</div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-btn next-btn" id="nextBtn">›</button>
+    </div>
+    
+    <div class="carousel-dots" id="carouselDots"></div>
+  </div>
+</section>
+</main>
+<footer class="footer" id="Контакты">
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Revival</h2>
+      </div>
+      <div class="footer-contact">
+        <p>Email:_<a href="derevanko2009@gmail.com">derevanko2009@gmail.com</a></p>
+        <p>Phone:_<a href="tel:+79493946470">+7 (949) 394-64-70</a></p>
+        <p>Addres:_г. Донецк  ул. Челюскинцев 157</p>
+      </div>
+    </div>
+    <div class="map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A59dde942b00d9f63a1aab0b9da4b5a76d910160782e9ef22471dbfe6fe35363e&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2026 Revival. All right reserved.</p>
+    </div>
+  </div>
+  <!-- Модальное окно корзины -->
+<div class="cart-modal" id="cartModal">
+  <div class="cart-modal-content">
+    <div class="cart-header">
+      <h3>Корзина</h3>
+      <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Корзина пуста</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Итого:</span>
+        <span id="cartTotal">0 ₽</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Оформить заказ</button>
+    </div>
+  </div>
+</div>
+
+<!-- Иконка корзины -->
+<div class="cart-icon" id="cartIcon">
+  🛒
+  <span class="cart-count" id="cartCount">0</span>
+</div>
+<script src="./script.js/script.js"></script>
+<script>
+  const burgerBtn = document.getElementById('burgerBtn');
+const navMenu = document.getElementById('navMenu');
+
+const overlay = document.createElement('div');
+overlay.classList.add('overlay');
+document.body.appendChild(overlay);
+
+// Функция переключения меню
+function toggleMenu() {
+  burgerBtn.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  
+  if (navMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+// Функция закрытия меню
+function closeMenu() {
+  if (navMenu.classList.contains('active')) {
+    burgerBtn.classList.remove('active');
+    navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+
+// Функция плавной прокрутки к якорю
+function scrollToAnchor(targetId, offset = 80) {
+  const targetElement = document.querySelector(targetId);
+  if (targetElement) {
+    const elementPosition = targetElement.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+    
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Обработчик кнопки бургера
+burgerBtn.addEventListener('click', toggleMenu);
+
+// Обработчик оверлея
+overlay.addEventListener('click', closeMenu);
+
+// Обработка всех ссылок в меню
+const allLinks = document.querySelectorAll('.nav-menu a, .header-icons a, .nav-link, .anchor-link, .menu a');
+allLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    
+    // Проверяем, является ли ссылка якорем
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      
+      // Закрываем меню
+      closeMenu();
+      
+      // Прокручиваем к якорю
+      scrollToAnchor(href, 80);
+      
+      // Обновляем URL без перезагрузки
+      history.pushState(null, null, href);
+    } else if (href && href !== '#' && !href.startsWith('http')) {
+      // Для обычных внутренних ссылок (не якорей)
+      closeMenu();
+      // Даем время на закрытие меню, затем переходим
+      setTimeout(() => {
+        window.location.href = href;
+      }, 200);
+    } else if (href && href.startsWith('http')) {
+      // Для внешних ссылок
+      closeMenu();
+    }
+  });
+});
+
+// Закрытие меню при изменении размера окна
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+    closeMenu();
+  }
+});
+
+// Если на страницу зашли с якорем в URL
+if (window.location.hash) {
+  setTimeout(() => {
+    scrollToAnchor(window.location.hash, 80);
+  }, 100);
+}
+
+
+
+const track = document.getElementById('carouselTrack');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const dotsContainer = document.getElementById('carouselDots');
+
+let currentIndex = 0;
+let cardsToShow = 3;
+
+// Получение всех карточек
+const cards = Array.from(document.querySelectorAll('.review-card'));
+const totalCards = cards.length;
+
+
+function updateCardsToShow() {
+  if (window.innerWidth <= 768) {
+    cardsToShow = 1;
+  } else if (window.innerWidth <= 1024) {
+    cardsToShow = 2;
+  } else {
+    cardsToShow = 3;
+  }
+}
+
+// Создание точек навигации
+function createDots() {
+  const totalDots = Math.ceil(totalCards / cardsToShow);
+  dotsContainer.innerHTML = '';
+  
+  for (let i = 0; i < totalDots; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === currentIndex) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      currentIndex = i;
+      updateCarousel();
+    });
+    dotsContainer.appendChild(dot);
+  }
+}
+
+// Обновление карусели
+function updateCarousel() {
+  const gap = 25;
+  const cardElement = cards[0];
+  
+  if (!cardElement) return;
+  
+  const cardWidthValue = cardElement.offsetWidth;
+  const offset = currentIndex * (cardWidthValue + gap);
+  track.style.transform = `translateX(-${offset}px)`;
+  
+  // Обновление активной точки
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, i) => {
+    if (i === currentIndex) {
+      dot.classList.add('active');
+    } else {
+      dot.classList.remove('active');
+    }
+  });
+  
+  // Обновление состояния кнопок
+  const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;
+  
+  if (prevBtn && nextBtn) {
+    if (currentIndex === 0) {
+      prevBtn.style.opacity = '0.5';
+      prevBtn.style.cursor = 'not-allowed';
+    } else {
+      prevBtn.style.opacity = '1';
+      prevBtn.style.cursor = 'pointer';
+    }
+    
+    if (currentIndex === maxIndex) {
+      nextBtn.style.opacity = '0.5';
+      nextBtn.style.cursor = 'not-allowed';
+    } else {
+      nextBtn.style.opacity = '1';
+      nextBtn.style.cursor = 'pointer';
+    }
+  }
+}
+
+// Следующий слайд
+function nextSlide() {
+  const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;
+  if (currentIndex < maxIndex) {
+    currentIndex++;
+    updateCarousel();
+  }
+}
+
+// Предыдущий слайд
+function prevSlide() {
+  if (currentIndex > 0) {
+    currentIndex--;
+    updateCarousel();
+  }
+}
+
+// Обработчики событий
+if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+// Адаптация при изменении размера окна
+let resizeTimeout;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    updateCardsToShow();
+    createDots();
+    
+    const maxIndex = Math.ceil(totalCards / cardsToShow) - 1;
+    if (currentIndex > maxIndex) {
+      currentIndex = maxIndex;
+    }
+    if (currentIndex < 0) {
+      currentIndex = 0;
+    }
+    
+    updateCarousel();
+  }, 200);
+});
+
+
+updateCardsToShow();
+createDots();
+updateCarousel();
+
+// Корзина
+let cartItems = [];
+
+// Загрузка из localStorage
+const savedCart = localStorage.getItem('cart');
+if (savedCart) {
+  cartItems = JSON.parse(savedCart);
+}
+
+// Данные товаров
+const products = [
+  { id: 1, name: 'Венский стул XIX век', price: 24900, image: './изображения/orig (2).webp' },
+  { id: 2, name: 'Комод "Шеваль"', price: 45500, image: './изображения/orig (1).webp' },
+  { id: 3, name: 'Зеркало в резной раме', price: 18900, image: './изображения/6596680322.jpg' },
+  { id: 4, name: 'Обеденный стол "Винтаж"', price: 67900, image: './изображения/6045039259.jpg' }
+];
+
+// Добавление в корзину
+document.querySelectorAll('.cart-btn').forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    const product = products[index];
+    const existingItem = cartItems.find(item => item.id === product.id);
+    
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cartItems.push({ ...product, quantity: 1 });
+    }
+    
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+    updateCartUI();
+    updateCartCount();
+  });
+});
+
+// Обновление счетчика корзины
+function updateCartCount() {
+  const count = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  const cartCount = document.getElementById('cartCount');
+  if (cartCount) {
+    cartCount.textContent = count;
+    cartCount.style.display = count > 0 ? 'flex' : 'none';
+  }
+}
+
+// Обновление содержимого корзины
+function updateCartUI() {
+  const cartItemsContainer = document.getElementById('cartItems');
+  const cartTotalSpan = document.getElementById('cartTotal');
+  
+  if (!cartItemsContainer) return;
+  
+  if (cartItems.length === 0) {
+    cartItemsContainer.innerHTML = '<p class="empty-cart">Корзина пуста</p>';
+    if (cartTotalSpan) cartTotalSpan.textContent = '0 ₽';
+    return;
+  }
+  
+  let total = 0;
+  cartItemsContainer.innerHTML = cartItems.map(item => {
+    total += item.price * item.quantity;
+    return `
+      <div class="cart-item" data-id="${item.id}">
+        <div class="cart-item-image">
+          <img src="${item.image}" alt="${item.name}">
+        </div>
+        <div class="cart-item-info">
+          <div class="cart-item-title">${item.name}</div>
+          <div class="cart-item-price">${item.price.toLocaleString()} ₽</div>
+          <div class="cart-item-quantity">Количество: ${item.quantity}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  
+  if (cartTotalSpan) {
+    cartTotalSpan.textContent = total.toLocaleString() + ' ₽';
+  }
+}
+
+// Очистка корзины
+function clearCart() {
+  cartItems = [];
+  localStorage.setItem('cart', JSON.stringify(cartItems));
+  updateCartUI();
+  updateCartCount();
+}
+
+// Модальное окно
+const cartModal = document.getElementById('cartModal');
+const cartIcon = document.getElementById('cartIcon');
+const closeCartBtn = document.getElementById('closeCartBtn');
+
+if (cartIcon) {
+  cartIcon.addEventListener('click', () => {
+    updateCartUI();
+    cartModal.classList.add('show');
+  });
+}
+
+if (closeCartBtn) {
+  closeCartBtn.addEventListener('click', () => {
+    cartModal.classList.remove('show');
+  });
+}
+
+cartModal.addEventListener('click', (e) => {
+  if (e.target === cartModal) {
+    cartModal.classList.remove('show');
+  }
+});
+
+// Оформление заказа
+const checkoutBtn = document.getElementById('checkoutBtn');
+if (checkoutBtn) {
+  checkoutBtn.addEventListener('click', () => {
+    if (cartItems.length === 0) {
+      alert('Корзина пуста');
+      return;
+    }
+    
+    const total = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+    alert(`Заказ оформлен! Сумма: ${total.toLocaleString()} ₽`);
+    clearCart();
+    cartModal.classList.remove('show');
+  });
+}
+
+// Инициализация
+updateCartCount();
+updateCartUI();
+
+</script>
+</body>
+</html>
