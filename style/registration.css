@@ -1,0 +1,219 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url(../изображения/i.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registration{
+  margin: auto 0;
+  padding: 8px;
+  max-width: 700px;
+  max-height: 900px;
+  backdrop-filter: blur(10px);
+  border: 1px Solid ;
+  border-radius: 16px;
+  box-shadow:
+    /* Нижний и правый эффект глубины */
+    inset -0.75px -0.5px rgba(255, 255, 255, 0.356),
+    /* Верхний и левый эффект глубины */
+    inset +0.75px +0.5px rgba(255, 255, 255, 0.233),
+    /* Эффект тени */
+    3px 2px 10px rgba(0, 0, 0, 0.37),
+    /* Короткий подповерхностный эффект */
+    inset 0px 0px 10px 5px rgba(255, 255, 255, 0.025),
+    /* Длинный подповерхностный эффект */
+    inset 0px 0px 40px 5px rgba(255, 255, 255, 0.096);
+}
+.form-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.form-header h1 {
+  font-size: 32px;
+  color: #e9e63b;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 12px;
+  position: relative;
+  display: inline-block;
+}
+.form-header p {
+  font-size: 17px;
+  color: #f0d5ab;
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 25px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d4c81b;
+  letter-spacing: 0.7px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e0d6c8;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: white;
+  margin-bottom: 20px;
+}
+.form-group input:focus {
+  outline: none;
+  border-color: #e8eb33;
+  box-shadow: 0 0 0 3px rgba(218, 160, 80, 0.1);
+}
+.agreement-group {
+  margin: 25px 0 0;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #6B5E4A;
+  line-height: 1.4;
+  padding: 8px;
+}
+
+.checkbox-label input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-bottom: 0;
+}
+
+.checkbox-label a {
+  color: #daa050;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.checkbox-label a:hover {
+  text-decoration: underline;
+  color: #c48b3a;
+}
+.register-btn {
+  width: 100%;
+  padding: 14px;
+  background: #daa050;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1A2F22;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-btn:hover {
+  background: #c48b3a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(218, 160, 80, 0.3);
+}
+@media (min-width: 768px) {
+  .registration {
+    padding: 32px;
+    max-width: 550px;
+  }
+  
+  .form-header h1 {
+    font-size: 32px;
+  }
+  
+  .form-header p {
+    font-size: 15px;
+  }
+  
+  .form-group input {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  
+  .register-btn {
+    padding: 14px;
+    font-size: 16px;
+  }
+}
+
+/* Десктопы */
+@media (min-width: 1024px) {
+  .registration {
+    padding: 40px;
+    max-width: 600px;
+  }
+  
+  .form-header h1 {
+    font-size: 36px;
+  }
+  
+  .form-header p {
+    font-size: 16px;
+  }
+  
+  .form-group label {
+    font-size: 15px;
+  }
+  
+  .checkbox-label {
+    font-size: 13px;
+  }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+  
+  .registration {
+    padding: 20px;
+  }
+  
+  .form-header h1 {
+    font-size: 24px;
+  }
+  
+  .form-header p {
+    font-size: 12px;
+  }
+  
+  .form-group label {
+    font-size: 13px;
+  }
+  
+  .form-group input {
+    padding: 8px 10px;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  
+  .register-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .checkbox-label {
+    font-size: 11px;
+  }
+}
