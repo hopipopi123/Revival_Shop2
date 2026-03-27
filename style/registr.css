@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #143123 0%, #a4a8a5 100%);
+  font-family: 'Barlow', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.header-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1A2F22 0%, #2C4A35 100%);
+  padding: 12px 40px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  height: 80px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ccad46;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+
+.nav-menu {
+  display: block;
+}
+
+.header-icons {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+}
+
+.header-icons a {
+  text-decoration: none;
+  color: #ebcbcb;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.header-icons a:hover {
+  color: #C4A747;
+  background: rgba(196, 167, 71, 0.1);
+}
+
+/* Стиль для телефона */
+.header-icons li:nth-child(4) a {
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+
+.header-icons li:last-child a {
+  background-color: #C4A747;
+  color: #1A2F22;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.header-icons li:last-child a:hover {
+  background-color: #B88B4A;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Бургер-кнопка (скрыта на десктопе) */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.burger-menu span {
+  width: 100%;
+  height: 2px;
+  background-color: #C4A747;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Анимация бургера */
+.burger-menu.active span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Оверлей */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 998;
+  backdrop-filter: blur(2px);
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1070px) {
+  .header-container {
+    padding: 12px 20px;
+    height: 75px;
+  }
+  
+  .header-icons {
+    gap: 20px;
+  }
+  
+  .header-icons a {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
+  
+  .logo {
+    font-size: 22px;
+  }
+  
+  .header-icons li:last-child a {
+    padding: 5px 14px;
+  }
+}
+@media (max-width: 900px) {
+  .header-container {
+    padding: 12px 20px;
+    height: 70px;
+  }
+  
+  .header-icons {
+    gap: 20px;
+  }
+  
+  .header-icons a {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+  
+  .logo {
+    font-size: 22px;
+  }
+  
+  .header-icons li:last-child a {
+    padding: 5px 14px;
+  }
+}
+@media (max-width: 768px) {
+  .header-container {
+    padding: 12px 20px;
+    height: 65px;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+  
+  /* Показываем бургер */
+  .burger-menu {
+    display: flex;
+  }
+  
+  /* Скрываем десктопное меню */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(135deg, #1A2F22 0%, #2C4A35 100%);
+    padding: 80px 30px 30px;
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-menu.active {
+    right: 0;
+  }
+  
+  .header-icons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .header-icons a {
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    white-space: normal;
+  }
+  
+  .header-icons li:last-child a {
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  
+  .header-icons li:last-child a:hover {
+    transform: translateY(-2px);
+  }
+  
+  }
+@media (max-width: 600px) {
+  .header-container {
+    padding: 10px 16px;
+    height: 60px;
+  }
+  
+  .logo {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .burger-menu {
+    width: 26px;
+    height: 20px;
+  }
+  
+  .burger-menu span {
+    height: 2px;
+  }
+  
+  .burger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .burger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  .nav-menu {
+    width: 280px;
+    padding: 70px 25px 25px;
+  }
+  
+  .header-icons {
+    gap: 15px;
+  }
+  
+  .header-icons a {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  
+  .header-icons li:last-child a {
+    padding: 10px 16px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .nav-menu {
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .header-icons a {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile-card {
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  margin: auto 0;
+  padding: 8px;
+  backdrop-filter: blur(10px);
+  border: 1px Solid ;
+  border-radius: 16px;
+  box-shadow:
+    /* Нижний и правый эффект глубины */
+    inset -0.75px -0.5px rgba(255, 255, 255, 0.356),
+    /* Верхний и левый эффект глубины */
+    inset +0.75px +0.5px rgba(255, 255, 255, 0.233),
+    /* Эффект тени */
+    3px 2px 10px rgba(0, 0, 0, 0.37),
+    /* Короткий подповерхностный эффект */
+    inset 0px 0px 10px 5px rgba(255, 255, 255, 0.025),
+    /* Длинный подповерхностный эффект */
+    inset 0px 0px 40px 5px rgba(255, 255, 255, 0.096);
+        }
+
+        .profile-header {
+            text-align: center;
+            padding: 30px 20px 20px;
+            background: white;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            margin: 0 auto 15px;
+            overflow: hidden;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .profile-info {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .info-row {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-label {
+            width: 80px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .info-value {
+            flex: 1;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .edit-btn {
+            background: #b69d10;
+            color: white;
+            border: none;
+            padding: 6px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .edit-btn:hover {
+            background: #c29e80;
+        }
+
+        .status {
+            color: #666;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .exit{
+          padding-top: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .exit_btn{
+          padding: 9px 7px;
+          border-radius: 8px;
+          border: none;
+          background-color: rgb(206, 64, 64);
+          color: white;
+          cursor: pointer;
+        }
+        .exit_btn:hover{
+          background-color: rgb(233, 99, 99);
+        }
